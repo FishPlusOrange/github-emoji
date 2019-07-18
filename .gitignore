@@ -3,3 +3,7 @@
 
 # misc
 .DS_Store
+
+# log
+yarn-debug.log*
+yarn-error.log*

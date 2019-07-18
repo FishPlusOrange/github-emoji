@@ -28,9 +28,12 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        use: ['babel-loader'],
+        use: 'babel-loader',
         include: path.join(__dirname, 'src')
       }
     ]
+  },
+  resolve: {
+    extensions: ['.scss', '.js']
   }
 }

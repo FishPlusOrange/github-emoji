@@ -1,7 +1,7 @@
-import emojis from './emojis.js'
-import styles from './index.scss'
+import emojis from './emojis'
+import styles from './index'
 
-let app = document.querySelector('#app')
+let app = document.getElementById('app')
 
 // 遍历插入
 emojis.forEach(emojiList => {
@@ -25,12 +25,17 @@ emojis.forEach(emojiList => {
 
     // 复制到剪切板
     item.addEventListener('click', () => {
-      let input = document.createElement('input')
-      document.body.appendChild(input)
-      input.setAttribute('value', emojiItem.code)
-      input.select()
-      document.execCommand('copy')
-      document.body.removeChild(input)
+      if (document.execCommand) {
+        let input = document.createElement('input')
+        document.body.appendChild(input)
+        input.setAttribute('value', emojiItem.code)
+        input.select()
+        document.execCommand('copy')
+        document.body.removeChild(input)
+        alert(`${emojiItem.code} 已复制到剪切板`)
+      } else {
+        alert('无法复制到剪切板 error: document.execCommand')
+      }
     })
     list.appendChild(item)
   })
