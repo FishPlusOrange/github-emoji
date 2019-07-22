@@ -7,3 +7,6 @@
 # log
 yarn-debug.log*
 yarn-error.log*
+
+# source-map
+*.js.map

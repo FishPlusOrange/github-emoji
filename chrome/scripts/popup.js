@@ -1,1 +1,968 @@
-!function(e){var t={};function i(o){if(t[o])return t[o].exports;var n=t[o]={i:o,l:!1,exports:{}};return e[o].call(n.exports,n,n.exports,i),n.l=!0,n.exports}i.m=e,i.c=t,i.d=function(e,t,o){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(i.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)i.d(o,n,function(t){return e[t]}.bind(null,n));return o},i.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="",i(i.s=5)}([function(e,t,i){var o=i(1);"string"==typeof o&&(o=[[e.i,o,""]]);var n={hmr:!0,transform:void 0,insertInto:void 0};i(3)(o,n);o.locals&&(e.exports=o.locals)},function(e,t,i){(t=e.exports=i(2)(!1)).push([e.i,"._1Kweesk4MFAWknqqO3SK5q {\n  display: block;\n  text-align: center;\n  margin-bottom: 5px; }\n\n._2RS2wlFERD9ekFdj3fudTu {\n  display: flex;\n  flex-wrap: wrap;\n  width: 280px;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ._2RS2wlFERD9ekFdj3fudTu ._1Fsn4VBb5dPPVcTLlh4DUC {\n    width: 18px;\n    height: 18px;\n    margin: 5px;\n    background-size: contain;\n    cursor: pointer; }\n",""]),t.locals={"emoji-title":"_1Kweesk4MFAWknqqO3SK5q",emojiTitle:"_1Kweesk4MFAWknqqO3SK5q","emoji-list":"_2RS2wlFERD9ekFdj3fudTu",emojiList:"_2RS2wlFERD9ekFdj3fudTu","emoji-item":"_1Fsn4VBb5dPPVcTLlh4DUC",emojiItem:"_1Fsn4VBb5dPPVcTLlh4DUC"}},function(e,t,i){"use strict";e.exports=function(e){var t=[];return t.toString=function(){return this.map(function(t){var i=function(e,t){var i=e[1]||"",o=e[3];if(!o)return i;if(t&&"function"==typeof btoa){var n=(c=o,"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(c))))+" */"),s=o.sources.map(function(e){return"/*# sourceURL="+o.sourceRoot+e+" */"});return[i].concat(s).concat([n]).join("\n")}var c;return[i].join("\n")}(t,e);return t[2]?"@media "+t[2]+"{"+i+"}":i}).join("")},t.i=function(e,i){"string"==typeof e&&(e=[[null,e,""]]);for(var o={},n=0;n<this.length;n++){var s=this[n][0];null!=s&&(o[s]=!0)}for(n=0;n<e.length;n++){var c=e[n];null!=c[0]&&o[c[0]]||(i&&!c[2]?c[2]=i:i&&(c[2]="("+c[2]+") and ("+i+")"),t.push(c))}},t}},function(e,t,i){var o,n,s={},c=(o=function(){return window&&document&&document.all&&!window.atob},function(){return void 0===n&&(n=o.apply(this,arguments)),n}),r=function(e){var t={};return function(e,i){if("function"==typeof e)return e();if(void 0===t[e]){var o=function(e,t){return t?t.querySelector(e):document.querySelector(e)}.call(this,e,i);if(window.HTMLIFrameElement&&o instanceof window.HTMLIFrameElement)try{o=o.contentDocument.head}catch(e){o=null}t[e]=o}return t[e]}}(),u=null,a=0,g=[],m=i(4);function d(e,t){for(var i=0;i<e.length;i++){var o=e[i],n=s[o.id];if(n){n.refs++;for(var c=0;c<n.parts.length;c++)n.parts[c](o.parts[c]);for(;c<o.parts.length;c++)n.parts.push(j(o.parts[c],t))}else{var r=[];for(c=0;c<o.parts.length;c++)r.push(j(o.parts[c],t));s[o.id]={id:o.id,refs:1,parts:r}}}}function l(e,t){for(var i=[],o={},n=0;n<e.length;n++){var s=e[n],c=t.base?s[0]+t.base:s[0],r={css:s[1],media:s[2],sourceMap:s[3]};o[c]?o[c].parts.push(r):i.push(o[c]={id:c,parts:[r]})}return i}function p(e,t){var i=r(e.insertInto);if(!i)throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");var o=g[g.length-1];if("top"===e.insertAt)o?o.nextSibling?i.insertBefore(t,o.nextSibling):i.appendChild(t):i.insertBefore(t,i.firstChild),g.push(t);else if("bottom"===e.insertAt)i.appendChild(t);else{if("object"!=typeof e.insertAt||!e.insertAt.before)throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");var n=r(e.insertAt.before,i);i.insertBefore(t,n)}}function h(e){if(null===e.parentNode)return!1;e.parentNode.removeChild(e);var t=g.indexOf(e);t>=0&&g.splice(t,1)}function f(e){var t=document.createElement("style");if(void 0===e.attrs.type&&(e.attrs.type="text/css"),void 0===e.attrs.nonce){var o=function(){0;return i.nc}();o&&(e.attrs.nonce=o)}return b(t,e.attrs),p(e,t),t}function b(e,t){Object.keys(t).forEach(function(i){e.setAttribute(i,t[i])})}function j(e,t){var i,o,n,s;if(t.transform&&e.css){if(!(s="function"==typeof t.transform?t.transform(e.css):t.transform.default(e.css)))return function(){};e.css=s}if(t.singleton){var c=a++;i=u||(u=f(t)),o=w.bind(null,i,c,!1),n=w.bind(null,i,c,!0)}else e.sourceMap&&"function"==typeof URL&&"function"==typeof URL.createObjectURL&&"function"==typeof URL.revokeObjectURL&&"function"==typeof Blob&&"function"==typeof btoa?(i=function(e){var t=document.createElement("link");return void 0===e.attrs.type&&(e.attrs.type="text/css"),e.attrs.rel="stylesheet",b(t,e.attrs),p(e,t),t}(t),o=function(e,t,i){var o=i.css,n=i.sourceMap,s=void 0===t.convertToAbsoluteUrls&&n;(t.convertToAbsoluteUrls||s)&&(o=m(o));n&&(o+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(n))))+" */");var c=new Blob([o],{type:"text/css"}),r=e.href;e.href=URL.createObjectURL(c),r&&URL.revokeObjectURL(r)}.bind(null,i,t),n=function(){h(i),i.href&&URL.revokeObjectURL(i.href)}):(i=f(t),o=function(e,t){var i=t.css,o=t.media;o&&e.setAttribute("media",o);if(e.styleSheet)e.styleSheet.cssText=i;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(i))}}.bind(null,i),n=function(){h(i)});return o(e),function(t){if(t){if(t.css===e.css&&t.media===e.media&&t.sourceMap===e.sourceMap)return;o(e=t)}else n()}}e.exports=function(e,t){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");(t=t||{}).attrs="object"==typeof t.attrs?t.attrs:{},t.singleton||"boolean"==typeof t.singleton||(t.singleton=c()),t.insertInto||(t.insertInto="head"),t.insertAt||(t.insertAt="bottom");var i=l(e,t);return d(i,t),function(e){for(var o=[],n=0;n<i.length;n++){var c=i[n];(r=s[c.id]).refs--,o.push(r)}e&&d(l(e,t),t);for(n=0;n<o.length;n++){var r;if(0===(r=o[n]).refs){for(var u=0;u<r.parts.length;u++)r.parts[u]();delete s[r.id]}}}};var v,y=(v=[],function(e,t){return v[e]=t,v.filter(Boolean).join("\n")});function w(e,t,i,o){var n=i?"":o.css;if(e.styleSheet)e.styleSheet.cssText=y(t,n);else{var s=document.createTextNode(n),c=e.childNodes;c[t]&&e.removeChild(c[t]),c.length?e.insertBefore(s,c[t]):e.appendChild(s)}}},function(e,t){e.exports=function(e){var t="undefined"!=typeof window&&window.location;if(!t)throw new Error("fixUrls requires window.location");if(!e||"string"!=typeof e)return e;var i=t.protocol+"//"+t.host,o=i+t.pathname.replace(/\/[^\/]*$/,"/");return e.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi,function(e,t){var n,s=t.trim().replace(/^"(.*)"$/,function(e,t){return t}).replace(/^'(.*)'$/,function(e,t){return t});return/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(s)?e:(n=0===s.indexOf("//")?s:0===s.indexOf("/")?i+s:o+s.replace(/^\.\//,""),"url("+JSON.stringify(n)+")")})}},function(e,t,i){"use strict";i.r(t);var o=i(0),n=i.n(o),s=document.getElementById("app");[{title:"people",emojis:[{code:":grinning:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f600.png"},{code:":smiley:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f603.png"},{code:":smile:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f604.png"},{code:":grin:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f601.png"},{code:":laughing:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f606.png"},{code:":sweat_smile:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f605.png"},{code:":joy:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f602.png"},{code:":rofl:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f923.png"},{code:":relaxed:",url:"https://github.githubassets.com/images/icons/emoji/unicode/263a.png"},{code:":blush:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png"},{code:":innocent:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f607.png"},{code:":slightly_smiling_face:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f642.png"},{code:":upside_down_face:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f643.png"},{code:":wink:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f609.png"},{code:":relieved:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f60c.png"},{code:":heart_eyes:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f60d.png"},{code:":kissing_heart:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f618.png"},{code:":kissing:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f617.png"},{code:":kissing_smiling_eyes:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f619.png"},{code:":kissing_closed_eyes:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f61a.png"}]},{title:"animal",emojis:[{code:":dog:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f436.png"},{code:":cat:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f431.png"},{code:":mouse:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f42d.png"},{code:":hamster:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f439.png"},{code:":rabbit:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f430.png"},{code:":fox_face:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f98a.png"},{code:":bear:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png"},{code:":panda_face:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f43c.png"},{code:":koala:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f428.png"},{code:":tiger:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f42f.png"},{code:":lion:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f981.png"},{code:":cow:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f42e.png"},{code:":pig:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f437.png"},{code:":pig_nose:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f43d.png"},{code:":monkey_face:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f435.png"},{code:":hear_no_evil:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f649.png"},{code:":speak_no_evil:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f64a.png"},{code:":monkey:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f412.png"},{code:":chicken:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f414.png"},{code:":penguin:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f427.png"}]},{title:"food",emojis:[{code:":green_apple:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f34f.png"},{code:":apple:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f34e.png"},{code:":pear:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f350.png"},{code:":tangerine:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f34a.png"},{code:":lemon:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f34b.png"},{code:":banana:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f34c.png"},{code:":bear:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png"},{code:":watermelon:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f349.png"},{code:":grapes:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f347.png"},{code:":strawberry:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f353.png"},{code:":melon:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f348.png"},{code:":cherries:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f352.png"},{code:":peach:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f351.png"},{code:":pineapple:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f34d.png"},{code:":kiwi_fruit:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f95d.png"},{code:":avocado:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f951.png"},{code:":tomato:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f345.png"},{code:":cucumber:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f952.png"},{code:":carrot:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f955.png"},{code:":corn:",url:"https://github.githubassets.com/images/icons/emoji/unicode/1f33d.png"}]}].forEach(function(e){var t=document.createElement("span");t.className=n.a.emojiTitle,t.innerHTML=e.title,s.appendChild(t);var i=document.createElement("ul");i.className=n.a.emojiList,e.emojis.forEach(function(e){var t=document.createElement("li");t.className=n.a.emojiItem,t.style.backgroundImage="url(".concat(e.url,")"),t.addEventListener("click",function(){if(document.execCommand){var t=document.createElement("input");document.body.appendChild(t),t.setAttribute("value",e.code),t.select(),document.execCommand("copy"),document.body.removeChild(t),alert("".concat(e.code," 已复制到剪切板"))}else alert("无法复制到剪切板 error: document.execCommand")}),i.appendChild(t)}),s.appendChild(i)})}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _emojis__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var app = document.getElementById('app'); // 遍历插入
+
+_emojis__WEBPACK_IMPORTED_MODULE_0__["default"].forEach(function (emojiList) {
+  // 类名
+  var title = document.createElement('span');
+  title.className = _index__WEBPACK_IMPORTED_MODULE_1___default.a.emojiTitle;
+  title.innerHTML = emojiList.title;
+  app.appendChild(title); // 各类容器
+
+  var list = document.createElement('ul');
+  list.className = _index__WEBPACK_IMPORTED_MODULE_1___default.a.emojiList; // 各类内容
+
+  emojiList.emojis.forEach(function (emojiItem) {
+    var item = document.createElement('li');
+    item.className = _index__WEBPACK_IMPORTED_MODULE_1___default.a.emojiItem; // 设置 emoji 背景图片
+
+    item.style.backgroundImage = "url(".concat(emojiItem.url, ")"); // 复制到剪切板
+
+    item.addEventListener('click', function () {
+      if (document.execCommand) {
+        var input = document.createElement('input');
+        document.body.appendChild(input);
+        input.setAttribute('value', emojiItem.code);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        alert("".concat(emojiItem.code, " \u5DF2\u590D\u5236\u5230\u526A\u5207\u677F"));
+      } else {
+        alert('无法复制到剪切板 error: document.execCommand');
+      }
+
+      window.close();
+    });
+    list.appendChild(item);
+  });
+  app.appendChild(list);
+});
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ([{
+  title: 'people',
+  emojis: [{
+    code: ':grinning:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f600.png'
+  }, {
+    code: ':smiley:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f603.png'
+  }, {
+    code: ':smile:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f604.png'
+  }, {
+    code: ':grin:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f601.png'
+  }, {
+    code: ':laughing:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f606.png'
+  }, {
+    code: ':sweat_smile:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f605.png'
+  }, {
+    code: ':joy:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f602.png'
+  }, {
+    code: ':rofl:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f923.png'
+  }, {
+    code: ':relaxed:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/263a.png'
+  }, {
+    code: ':blush:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png'
+  }, {
+    code: ':innocent:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f607.png'
+  }, {
+    code: ':slightly_smiling_face:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f642.png'
+  }, {
+    code: ':upside_down_face:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f643.png'
+  }, {
+    code: ':wink:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f609.png'
+  }, {
+    code: ':relieved:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f60c.png'
+  }, {
+    code: ':heart_eyes:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f60d.png'
+  }, {
+    code: ':kissing_heart:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f618.png'
+  }, {
+    code: ':kissing:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f617.png'
+  }, {
+    code: ':kissing_smiling_eyes:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f619.png'
+  }, {
+    code: ':kissing_closed_eyes:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f61a.png'
+  }]
+}, {
+  title: 'animal',
+  emojis: [{
+    code: ':dog:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f436.png'
+  }, {
+    code: ':cat:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f431.png'
+  }, {
+    code: ':mouse:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f42d.png'
+  }, {
+    code: ':hamster:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f439.png'
+  }, {
+    code: ':rabbit:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f430.png'
+  }, {
+    code: ':fox_face:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f98a.png'
+  }, {
+    code: ':bear:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png'
+  }, {
+    code: ':panda_face:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f43c.png'
+  }, {
+    code: ':koala:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f428.png'
+  }, {
+    code: ':tiger:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f42f.png'
+  }, {
+    code: ':lion:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f981.png'
+  }, {
+    code: ':cow:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f42e.png'
+  }, {
+    code: ':pig:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f437.png'
+  }, {
+    code: ':pig_nose:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f43d.png'
+  }, {
+    code: ':monkey_face:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f435.png'
+  }, {
+    code: ':hear_no_evil:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f649.png'
+  }, {
+    code: ':speak_no_evil:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f64a.png'
+  }, {
+    code: ':monkey:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f412.png'
+  }, {
+    code: ':chicken:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f414.png'
+  }, {
+    code: ':penguin:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f427.png'
+  }]
+}, {
+  title: 'food',
+  emojis: [{
+    code: ':green_apple:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34f.png'
+  }, {
+    code: ':apple:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34e.png'
+  }, {
+    code: ':pear:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f350.png'
+  }, {
+    code: ':tangerine:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34a.png'
+  }, {
+    code: ':lemon:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34b.png'
+  }, {
+    code: ':banana:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34c.png'
+  }, {
+    code: ':bear:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png'
+  }, {
+    code: ':watermelon:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f349.png'
+  }, {
+    code: ':grapes:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f347.png'
+  }, {
+    code: ':strawberry:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f353.png'
+  }, {
+    code: ':melon:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f348.png'
+  }, {
+    code: ':cherries:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f352.png'
+  }, {
+    code: ':peach:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f351.png'
+  }, {
+    code: ':pineapple:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34d.png'
+  }, {
+    code: ':kiwi_fruit:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f95d.png'
+  }, {
+    code: ':avocado:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f951.png'
+  }, {
+    code: ':tomato:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f345.png'
+  }, {
+    code: ':cucumber:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f952.png'
+  }, {
+    code: ':carrot:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f955.png'
+  }, {
+    code: ':corn:',
+    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f33d.png'
+  }]
+}]);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(3);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(5)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(false);
+// Module
+exports.push([module.i, "._1Kweesk4MFAWknqqO3SK5q {\n  display: block;\n  text-align: center;\n  margin-bottom: 5px; }\n\n._2RS2wlFERD9ekFdj3fudTu {\n  display: flex;\n  flex-wrap: wrap;\n  width: 280px;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ._2RS2wlFERD9ekFdj3fudTu ._1Fsn4VBb5dPPVcTLlh4DUC {\n    width: 18px;\n    height: 18px;\n    margin: 5px;\n    background-size: contain;\n    cursor: pointer; }\n", ""]);
+
+// Exports
+exports.locals = {
+	"emoji-title": "_1Kweesk4MFAWknqqO3SK5q",
+	"emojiTitle": "_1Kweesk4MFAWknqqO3SK5q",
+	"emoji-list": "_2RS2wlFERD9ekFdj3fudTu",
+	"emojiList": "_2RS2wlFERD9ekFdj3fudTu",
+	"emoji-item": "_1Fsn4VBb5dPPVcTLlh4DUC",
+	"emojiItem": "_1Fsn4VBb5dPPVcTLlh4DUC"
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return '@media ' + item[2] + '{' + content + '}';
+      } else {
+        return content;
+      }
+    }).join('');
+  }; // import a list of modules into the list
+
+
+  list.i = function (modules, mediaQuery) {
+    if (typeof modules === 'string') {
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    for (var i = 0; i < this.length; i++) {
+      var id = this[i][0];
+
+      if (id != null) {
+        alreadyImportedModules[id] = true;
+      }
+    }
+
+    for (i = 0; i < modules.length; i++) {
+      var item = modules[i]; // skip already imported module
+      // this implementation is not 100% perfect for weird media query combinations
+      // when a module is imported multiple times with different media queries.
+      // I hope this will never occur (Hey this way we have smaller bundles)
+
+      if (item[0] == null || !alreadyImportedModules[item[0]]) {
+        if (mediaQuery && !item[2]) {
+          item[2] = mediaQuery;
+        } else if (mediaQuery) {
+          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';
+        }
+
+        list.push(item);
+      }
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || '';
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+  return '/*# ' + data + ' */';
+}
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target, parent) {
+  if (parent){
+    return parent.querySelector(target);
+  }
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target, parent) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target, parent);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
+})();
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(6);
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertAt.before, target);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+
+	if(options.attrs.nonce === undefined) {
+		var nonce = getNonce();
+		if (nonce) {
+			options.attrs.nonce = nonce;
+		}
+	}
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	if(options.attrs.type === undefined) {
+		options.attrs.type = "text/css";
+	}
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function getNonce() {
+	if (false) {}
+
+	return __webpack_require__.nc;
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = typeof options.transform === 'function'
+		 ? options.transform(obj.css) 
+		 : options.transform.default(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ })
+/******/ ]);
+//# sourceMappingURL=popup.js.map

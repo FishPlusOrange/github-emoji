@@ -5,8 +5,8 @@
   "license": "MIT",
   "description": "A chrome extension of github emoji picker for fun",
   "scripts": {
-    "dev": "webpack --watch",
-    "build": "webpack"
+    "dev": "webpack --mode-development --watch",
+    "build": "webpack --mode-production"
   },
   "repository": {
     "type": "git",

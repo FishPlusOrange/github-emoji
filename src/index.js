@@ -36,6 +36,7 @@ emojis.forEach(emojiList => {
       } else {
         alert('无法复制到剪切板 error: document.execCommand')
       }
+      window.close()
     })
     list.appendChild(item)
   })

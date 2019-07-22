@@ -1,13 +1,21 @@
 const path = require('path')
 
+const ROOT_PATH = path.resolve(__dirname)
+const APP_PATH = path.resolve(ROOT_PATH, 'src')
+const BUILD_PATH = path.resolve(ROOT_PATH, 'chrome/scripts')
+
+const isProd = process.env.NODE_ENV === 'production'
+
+console.log(isProd)
+
 module.exports = {
-  mode: 'production',
+  mode: 'none',
   entry: {
-    app: path.join(__dirname, 'src/index.js')
+    app: './src/index.js'
   },
   output: {
     filename: 'popup.js',
-    path: path.join(__dirname, 'chrome/scripts')
+    path: BUILD_PATH
   },
   module: {
     rules: [
@@ -24,16 +32,17 @@ module.exports = {
           },
           'sass-loader'
         ],
-        include: path.join(__dirname, 'src')
+        include: APP_PATH
       },
       {
         test: /\.js$/,
         use: 'babel-loader',
-        include: path.join(__dirname, 'src')
+        include: APP_PATH
       }
     ]
   },
   resolve: {
     extensions: ['.scss', '.js']
-  }
+  },
+  devtool: isProd ? 'hidden-source-map' : 'source-map'
 }
