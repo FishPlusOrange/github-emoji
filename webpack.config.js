@@ -6,8 +6,6 @@ const BUILD_PATH = path.resolve(ROOT_PATH, 'chrome/scripts')
 
 const isProd = process.env.NODE_ENV === 'production'
 
-console.log(isProd)
-
 module.exports = {
   mode: 'none',
   entry: {
