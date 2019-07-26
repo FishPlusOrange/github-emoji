@@ -1,1 +1,12 @@
-{}
+{
+  "env": {
+    "browser": true
+  },
+  "extends": "standard",
+  "parser": "babel-eslint",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": 2,
+    "newline-after-var": 2
+  }
+}

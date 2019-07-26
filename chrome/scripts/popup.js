@@ -133,6 +133,10 @@ _emojis__WEBPACK_IMPORTED_MODULE_0__["default"].forEach(function (emojiList) {
   app.appendChild(list);
 });
 
+function foo() {
+  return 123;
+}
+
 /***/ }),
 /* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
