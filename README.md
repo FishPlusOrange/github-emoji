@@ -1,6 +1,10 @@
 # Easy Emoji
 
-A chrome extension of github emoji picker for fun :slightly_smiling_face: :grin: :upside_down_face:.
+A chrome extension of github emoji picker for fun :slightly_smiling_face: :octocat: :upside_down_face:.
+
+## Preview
+
+![easy-emoji](https://github.com/FishPlusOrange/easy-emoji/blob/master/docs/screenshot.png)
 
 ## License
 
