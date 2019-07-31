@@ -454,6 +454,21 @@ __webpack_require__.r(__webpack_exports__);
     code: ':austria:',
     url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1f9.png'
   }]
+}, {
+  title: 'others',
+  emojis: [{
+    code: ':octocat:',
+    url: 'https://github.githubassets.com/images/icons/emoji/octocat.png'
+  }, {
+    code: ':shipit:',
+    url: 'https://github.githubassets.com/images/icons/emoji/shipit.png'
+  }, {
+    code: ':atom:',
+    url: 'https://github.githubassets.com/images/icons/emoji/atom.png'
+  }, {
+    code: ':electron:',
+    url: 'https://github.githubassets.com/images/icons/emoji/electron.png'
+  }]
 }]);
 
 /***/ }),
