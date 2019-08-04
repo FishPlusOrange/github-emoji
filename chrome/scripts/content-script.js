@@ -1,1 +1,1 @@
-console.log('Easy Emoji')
+console.log('GitHub Emoji')

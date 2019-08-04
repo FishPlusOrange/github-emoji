@@ -1,9 +1,9 @@
 {
-  "name": "Easy Emoji",
+  "name": "GitHub Emoji",
   "version": "0.7.0",
   "manifest_version": 2,
   "description": "A chrome extension of github emoji picker for fun.",
-  "homepage_url": "https://github.com/FishPlusOrange/easy-emoji",
+  "homepage_url": "https://github.com/FishPlusOrange/github-emoji",
   "icons": {
     "16": "images/octocat.png",
     "48": "images/octocat.png",
@@ -20,7 +20,7 @@
     }
   ],
   "page_action": {
-    "default_title": "Easy Emoji",
+    "default_title": "GitHub Emoji",
     "default_popup": "popup.html"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "easy-emoji",
+  "name": "github-emoji",
   "version": "0.7.0",
   "author": "FishPlusOrange",
   "license": "MIT",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FishPlusOrange/easy-emoji.git"
+    "url": "git+https://github.com/FishPlusOrange/github-emoji.git"
   },
   "bugs": {
-    "url": "https://github.com/FishPlusOrange/easy-emoji/issues"
+    "url": "https://github.com/FishPlusOrange/github-emoji/issues"
   },
-  "homepage": "https://github.com/FishPlusOrange/easy-emoji#readme",
+  "homepage": "https://github.com/FishPlusOrange/github-emoji#readme",
   "devDependencies": {
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
