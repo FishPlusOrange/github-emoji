@@ -93,6 +93,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emojis__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
+
 
 
 var app = document.getElementById('app'); // 遍历插入
@@ -114,18 +116,7 @@ _emojis__WEBPACK_IMPORTED_MODULE_0__["default"].forEach(function (emojiList) {
     item.style.backgroundImage = "url(".concat(emojiItem.url, ")"); // 复制到剪切板
 
     item.addEventListener('click', function () {
-      if (document.execCommand) {
-        var input = document.createElement('input');
-        document.body.appendChild(input);
-        input.setAttribute('value', emojiItem.code);
-        input.select();
-        document.execCommand('copy');
-        document.body.removeChild(input);
-        alert("".concat(emojiItem.code, " \u5DF2\u590D\u5236\u5230\u526A\u5207\u677F"));
-      } else {
-        alert('无法复制到剪切板 error: document.execCommand');
-      }
-
+      Object(_utils__WEBPACK_IMPORTED_MODULE_2__["copy"])(emojiItem.code);
       window.close();
     });
     list.appendChild(item);
@@ -1103,6 +1094,28 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "copy", function() { return copy; });
+// 复制到剪切板
+var copy = function copy(content) {
+  if (document.execCommand) {
+    var input = document.createElement('input');
+    document.body.appendChild(input);
+    input.setAttribute('value', content);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+    alert("".concat(content, " \u5DF2\u590D\u5236\u5230\u526A\u5207\u677F"));
+  } else {
+    alert('复制到剪切板失败');
+  }
+};
 
 /***/ })
 /******/ ]);

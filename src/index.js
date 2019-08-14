@@ -1,5 +1,6 @@
 import emojis from './emojis'
 import styles from './index'
+import { copy } from './utils'
 
 const app = document.getElementById('app')
 
@@ -24,18 +25,7 @@ emojis.forEach(emojiList => {
     item.style.backgroundImage = `url(${emojiItem.url})`
     // 复制到剪切板
     item.addEventListener('click', () => {
-      if (document.execCommand) {
-        const input = document.createElement('input')
-
-        document.body.appendChild(input)
-        input.setAttribute('value', emojiItem.code)
-        input.select()
-        document.execCommand('copy')
-        document.body.removeChild(input)
-        alert(`${emojiItem.code} 已复制到剪切板`)
-      } else {
-        alert('无法复制到剪切板 error: document.execCommand')
-      }
+      copy(emojiItem.code)
       window.close()
     })
     list.appendChild(item)
