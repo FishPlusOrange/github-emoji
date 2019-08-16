@@ -1,187 +1,49 @@
-export default [
-  {
-    title: 'people',
-    emojis: [
-      {
-        code: ':grinning:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f600.png'
-      },
-      {
-        code: ':smiley:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f603.png'
-      },
-      {
-        code: ':smile:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f604.png'
-      },
-      {
-        code: ':grin:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f601.png'
-      },
-      {
-        code: ':laughing:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f606.png'
-      },
-      {
-        code: ':sweat_smile:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f605.png'
-      },
-      {
-        code: ':joy:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f602.png'
-      },
-      {
-        code: ':rofl:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f923.png'
-      },
-      {
-        code: ':relaxed:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/263a.png'
-      },
-      {
-        code: ':blush:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png'
-      },
-      {
-        code: ':innocent:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f607.png'
-      },
-      {
-        code: ':slightly_smiling_face:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f642.png'
-      },
-      {
-        code: ':upside_down_face:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f643.png'
-      },
-      {
-        code: ':wink:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f609.png'
-      },
-      {
-        code: ':relieved:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f60c.png'
-      },
-      {
-        code: ':heart_eyes:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f60d.png'
-      },
-      {
-        code: ':kissing_heart:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f618.png'
-      },
-      {
-        code: ':kissing:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f617.png'
-      },
-      {
-        code: ':kissing_smiling_eyes:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f619.png'
-      },
-      {
-        code: ':kissing_closed_eyes:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f61a.png'
-      }
-    ]
-  },
+export default {
+  people: [
+    'grinning',
+    'smiley',
+    'smile',
+    'grin',
+    'laughing',
+    'sweat_smile',
+    'joy',
+    'rofl',
+    'relaxed',
+    'blush',
+    'innocent',
+    'slightly_smiling_face',
+    'upside_down_face',
+    'wink',
+    'relieved',
+    'heart_eyes',
+    'kissing_heart',
+    'kissing',
+    'kissing_smiling_eyes',
+    'kissing_closed_eyes'
+  ],
+  animal: [
+    'dog',
+    'cat',
+    'mouse',
+    'hamster',
+    'rabbit',
+    'fox_face',
+    'bear',
+    'panda_face',
+    'koala',
+    'tiger',
+    'lion',
+    'cow',
+    'pig',
+    'pig_nose',
+    'monkey_face'
+  ]
+}
+
+const emojis = [
   {
     title: 'animal',
     emojis: [
-      {
-        code: ':dog:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f436.png'
-      },
-      {
-        code: ':cat:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f431.png'
-      },
-      {
-        code: ':mouse:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f42d.png'
-      },
-      {
-        code: ':hamster:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f439.png'
-      },
-      {
-        code: ':rabbit:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f430.png'
-      },
-      {
-        code: ':fox_face:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f98a.png'
-      },
-      {
-        code: ':bear:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png'
-      },
-      {
-        code: ':panda_face:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f43c.png'
-      },
-      {
-        code: ':koala:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f428.png'
-      },
-      {
-        code: ':tiger:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f42f.png'
-      },
-      {
-        code: ':lion:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f981.png'
-      },
-      {
-        code: ':cow:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f42e.png'
-      },
-      {
-        code: ':pig:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f437.png'
-      },
-      {
-        code: ':pig_nose:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f43d.png'
-      },
-      {
-        code: ':monkey_face:',
-        url:
-          'https://github.githubassets.com/images/icons/emoji/unicode/1f435.png'
-      },
       {
         code: ':hear_no_evil:',
         url:

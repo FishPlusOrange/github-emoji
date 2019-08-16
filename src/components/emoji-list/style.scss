@@ -1,11 +1,6 @@
 $emoji-wdith: 18px;
 
-.emoji-title {
-  display: block;
-  text-align: center;
-  margin-bottom: 5px;
-}
-.emoji-list {
+:local(.emoji-list) {
   display: flex;
   flex-wrap: wrap;
   width: 280px;

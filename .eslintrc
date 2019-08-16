@@ -2,11 +2,12 @@
   "env": {
     "browser": true
   },
-  "extends": "standard",
+  "extends": ["standard", "standard-react"],
   "parser": "babel-eslint",
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": 2,
-    "newline-after-var": 2
+    "newline-after-var": 1,
+    "react/prop-types": 0
   }
 }
