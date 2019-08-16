@@ -8,11 +8,11 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 # install
-yarn
+npm install
 
 # pre
-yarn version --new-version $VERSION --no-git-tag-version
-yarn build
+npm version $VERSION --no-git-tag-version
+npm run build
 
 # commit
 git tag v$VERSION
@@ -23,5 +23,5 @@ git push origin master
 git push origin tags/v$VERSION
 
 # publish
-yarn publish
+npm publish --access=public
 fi
