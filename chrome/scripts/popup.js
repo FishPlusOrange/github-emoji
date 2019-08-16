@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
 
 
@@ -29252,233 +29252,28 @@ exports.unstable_unsubscribe = unstable_unsubscribe;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  people: ['grinning', 'smiley', 'smile', 'grin', 'laughing', 'sweat_smile', 'joy', 'rofl', 'relaxed', 'blush', 'innocent', 'slightly_smiling_face', 'upside_down_face', 'wink', 'relieved', 'heart_eyes', 'kissing_heart', 'kissing', 'kissing_smiling_eyes', 'kissing_closed_eyes'],
-  animal: ['dog', 'cat', 'mouse', 'hamster', 'rabbit', 'fox_face', 'bear', 'panda_face', 'koala', 'tiger', 'lion', 'cow', 'pig', 'pig_nose', 'monkey_face']
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emoji__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+/* harmony import */ var _components_emoji_title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
+/* harmony import */ var _components_emoji_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20);
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var app = [];
+  Object.keys(_emoji__WEBPACK_IMPORTED_MODULE_1__["default"]).map(function (title) {
+    return app.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+      key: title
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_emoji_title__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      title: title
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_emoji_list__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      emojiList: _emoji__WEBPACK_IMPORTED_MODULE_1__["default"][title]
+    })));
+  });
+  return app;
 });
-var emojis = [{
-  title: 'animal',
-  emojis: [{
-    code: ':hear_no_evil:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f649.png'
-  }, {
-    code: ':speak_no_evil:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f64a.png'
-  }, {
-    code: ':monkey:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f412.png'
-  }, {
-    code: ':chicken:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f414.png'
-  }, {
-    code: ':penguin:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f427.png'
-  }]
-}, {
-  title: 'food',
-  emojis: [{
-    code: ':green_apple:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34f.png'
-  }, {
-    code: ':apple:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34e.png'
-  }, {
-    code: ':pear:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f350.png'
-  }, {
-    code: ':tangerine:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34a.png'
-  }, {
-    code: ':lemon:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34b.png'
-  }, {
-    code: ':banana:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34c.png'
-  }, {
-    code: ':bear:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png'
-  }, {
-    code: ':watermelon:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f349.png'
-  }, {
-    code: ':grapes:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f347.png'
-  }, {
-    code: ':strawberry:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f353.png'
-  }, {
-    code: ':melon:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f348.png'
-  }, {
-    code: ':cherries:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f352.png'
-  }, {
-    code: ':peach:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f351.png'
-  }, {
-    code: ':pineapple:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f34d.png'
-  }, {
-    code: ':kiwi_fruit:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f95d.png'
-  }, {
-    code: ':avocado:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f951.png'
-  }, {
-    code: ':tomato:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f345.png'
-  }, {
-    code: ':cucumber:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f952.png'
-  }, {
-    code: ':carrot:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f955.png'
-  }, {
-    code: ':corn:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f33d.png'
-  }]
-}, {
-  title: 'activity',
-  emojis: [{
-    code: ':soccer:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/26bd.png'
-  }, {
-    code: ':basketball:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3c0.png'
-  }, {
-    code: ':football:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3c8.png'
-  }, {
-    code: ':baseball:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/26be.png'
-  }, {
-    code: ':tennis:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3be.png'
-  }, {
-    code: ':volleyball:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3d0.png'
-  }, {
-    code: ':rugby_football:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3c9.png'
-  }, {
-    code: ':8ball:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3b1.png'
-  }, {
-    code: ':ping_pong:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3d3.png'
-  }, {
-    code: ':badminton:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3f8.png'
-  }, {
-    code: ':goal_net:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f945.png'
-  }, {
-    code: ':ice_hockey:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3d2.png'
-  }, {
-    code: ':field_hockey:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3d1.png'
-  }, {
-    code: ':cricket:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3cf.png'
-  }, {
-    code: ':golf:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/26f3.png'
-  }, {
-    code: ':bow_and_arrow:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3f9.png'
-  }, {
-    code: ':fishing_pole_and_fish:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3a3.png'
-  }, {
-    code: ':boxing_glove:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f94a.png'
-  }, {
-    code: ':martial_arts_uniform:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f94b.png'
-  }, {
-    code: ':ice_skate:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/26f8.png'
-  }]
-}, {
-  title: 'flag',
-  emojis: [{
-    code: ':white_flag:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3f3.png'
-  }, {
-    code: ':black_flag:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3f4.png'
-  }, {
-    code: ':checkered_flag:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3c1.png'
-  }, {
-    code: ':triangular_flag_on_post:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f6a9.png'
-  }, {
-    code: ':rainbow_flag:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f3f3-1f308.png'
-  }, {
-    code: ':afghanistan:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1eb.png'
-  }, {
-    code: ':aland_islands:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1fd.png'
-  }, {
-    code: ':albania:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1f1.png'
-  }, {
-    code: ':algeria:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e9-1f1ff.png'
-  }, {
-    code: ':american_samoa:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1f8.png'
-  }, {
-    code: ':andorra:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1e9.png'
-  }, {
-    code: ':angola:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1f4.png'
-  }, {
-    code: ':anguilla:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1ee.png'
-  }, {
-    code: ':antarctica:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1f6.png'
-  }, {
-    code: ':antigua_barbuda:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1ec.png'
-  }, {
-    code: ':argentina:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1f7.png'
-  }, {
-    code: ':armenia:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1f2.png'
-  }, {
-    code: ':aruba:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1fc.png'
-  }, {
-    code: ':australia:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1fa.png'
-  }, {
-    code: ':austria:',
-    url: 'https://github.githubassets.com/images/icons/emoji/unicode/1f1e6-1f1f9.png'
-  }]
-}, {
-  title: 'others',
-  emojis: [{
-    code: ':octocat:',
-    url: 'https://github.githubassets.com/images/icons/emoji/octocat.png'
-  }, {
-    code: ':shipit:',
-    url: 'https://github.githubassets.com/images/icons/emoji/shipit.png'
-  }, {
-    code: ':atom:',
-    url: 'https://github.githubassets.com/images/icons/emoji/atom.png'
-  }, {
-    code: ':electron:',
-    url: 'https://github.githubassets.com/images/icons/emoji/electron.png'
-  }]
-}];
 
 /***/ }),
 /* 13 */
@@ -29486,9 +29281,24 @@ var emojis = [{
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  people: ['grinning', 'smiley', 'smile', 'grin', 'laughing', 'sweat_smile', 'joy', 'rofl', 'relaxed', 'blush', 'innocent', 'slightly_smiling_face', 'upside_down_face', 'wink', 'relieved', 'heart_eyes', 'kissing_heart', 'kissing', 'kissing_smiling_eyes', 'kissing_closed_eyes'],
+  animal: ['dog', 'cat', 'mouse', 'hamster', 'rabbit', 'fox_face', 'bear', 'panda_face', 'koala', 'tiger', 'lion', 'cow', 'pig', 'pig_nose', 'monkey_face', 'hear_no_evil', 'speak_no_evil', 'monkey', 'chicken', 'penguin'],
+  food: ['green_apple', 'apple', 'pear', 'tangerine', 'lemon', 'banana', 'watermelon', 'grapes', 'strawberry', 'melon', 'cherries', 'peach', 'pineapple', 'kiwi_fruit', 'avocado', 'tomato', 'cucumber', 'carrot', 'corn'],
+  activity: ['soccer', 'basketball', 'football', 'baseball', 'tennis', 'volleyball', 'rugby_football', '8ball', 'ping_pong', 'badminton', 'goal_net', 'ice_hockey', 'field_hockey', 'cricket', 'golf', 'bow_and_arrow', 'fishing_pole_and_fish', 'boxing_glove', 'martial_arts_uniform', 'ice_skate'],
+  flag: ['white_flag', 'black_flag', 'checkered_flag', 'triangular_flag_on_post', 'rainbow_flag', 'afghanistan', 'aland_islands', 'albania', 'algeria', 'american_samoa', 'andorra', 'angola', 'anguilla', 'antarctica', 'antigua_barbuda', 'argentina', 'armenia', 'aruba', 'australia', 'austria'],
+  others: ['octocat', 'shipit', 'atom', 'electron']
+});
+
+/***/ }),
+/* 14 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15);
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -29500,11 +29310,11 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(15);
+var content = __webpack_require__(16);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -29518,17 +29328,17 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(17)(content, options);
+var update = __webpack_require__(18)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(16)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // Module
 exports.push([module.i, ".l3AIoDxof7nzpiXl-eK3K {\n  display: block;\n  text-align: center;\n  margin-bottom: 5px; }\n", ""]);
 
@@ -29538,7 +29348,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29629,7 +29439,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -29698,7 +29508,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(18);
+var	fixUrls = __webpack_require__(19);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -30033,7 +29843,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 
@@ -30128,15 +29938,15 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20);
-/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21);
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(22);
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -30161,7 +29971,7 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30183,11 +29993,11 @@ var copy = function copy(content) {
 };
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(22);
+var content = __webpack_require__(23);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -30201,17 +30011,17 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(17)(content, options);
+var update = __webpack_require__(18)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(16)(false);
+exports = module.exports = __webpack_require__(17)(false);
 // Module
 exports.push([module.i, "._1aJdy-0uWF2_mOe6yDc7-_ {\n  display: flex;\n  flex-wrap: wrap;\n  width: 280px;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ._1aJdy-0uWF2_mOe6yDc7-_ ._3B0OFuX3rQYIQud3Y29O7 {\n    width: 18px;\n    height: 18px;\n    margin: 5px;\n    background-size: contain;\n    cursor: pointer; }\n", ""]);
 
@@ -30220,35 +30030,6 @@ exports.locals = {
 	"list": "_1aJdy-0uWF2_mOe6yDc7-_",
 	"item": "_3B0OFuX3rQYIQud3Y29O7"
 };
-
-/***/ }),
-/* 23 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _emoji__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
-/* harmony import */ var _components_emoji_title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
-/* harmony import */ var _components_emoji_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(19);
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  var app = [];
-  Object.keys(_emoji__WEBPACK_IMPORTED_MODULE_1__["default"]).map(function (title) {
-    return app.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-      key: title
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_emoji_title__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      title: title
-    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_emoji_list__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      emojiList: _emoji__WEBPACK_IMPORTED_MODULE_1__["default"][title]
-    })));
-  });
-  return app;
-});
 
 /***/ })
 /******/ ]);

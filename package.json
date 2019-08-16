@@ -6,7 +6,8 @@
   "description": "A chrome extension of github emoji picker for fun",
   "scripts": {
     "dev": "webpack --mode-development --watch",
-    "build": "webpack --mode-production"
+    "build": "webpack --mode-production",
+    "release": "sh release.sh"
   },
   "repository": {
     "type": "git",
