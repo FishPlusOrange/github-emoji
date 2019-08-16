@@ -1,15 +1,15 @@
-$emoji-wdith: 18px;
+$wdith: 18px;
 
-:local(.emoji-list) {
+.list {
   display: flex;
   flex-wrap: wrap;
   width: 280px;
   padding: 0;
   margin: 0;
   list-style: none;
-  .emoji-item {
-    width: $emoji-wdith;
-    height: $emoji-wdith;
+  .item {
+    width: $wdith;
+    height: $wdith;
     margin: 5px;
     background-size: contain;
     cursor: pointer;

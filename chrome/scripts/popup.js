@@ -29495,7 +29495,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var title = _ref.title;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: _style__WEBPACK_IMPORTED_MODULE_1___default.a.emojiTitle
+    className: _style__WEBPACK_IMPORTED_MODULE_1___default.a.title
   }, title);
 });
 
@@ -29530,12 +29530,11 @@ if(false) {}
 
 exports = module.exports = __webpack_require__(16)(false);
 // Module
-exports.push([module.i, ".CyYJJ4HhfT6VjEPUTjKVL {\n  display: block;\n  text-align: center;\n  margin-bottom: 5px; }\n", ""]);
+exports.push([module.i, ".l3AIoDxof7nzpiXl-eK3K {\n  display: block;\n  text-align: center;\n  margin-bottom: 5px; }\n", ""]);
 
 // Exports
 exports.locals = {
-	"emoji-title": "CyYJJ4HhfT6VjEPUTjKVL",
-	"emojiTitle": "CyYJJ4HhfT6VjEPUTjKVL"
+	"title": "l3AIoDxof7nzpiXl-eK3K"
 };
 
 /***/ }),
@@ -30145,11 +30144,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var emojiList = _ref.emojiList;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: _style__WEBPACK_IMPORTED_MODULE_2___default.a.emojiList
+    className: _style__WEBPACK_IMPORTED_MODULE_2___default.a.list
   }, emojiList.map(function (emojiItem) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
       key: emojiItem,
-      className: _style__WEBPACK_IMPORTED_MODULE_2___default.a.emojiItem,
+      className: _style__WEBPACK_IMPORTED_MODULE_2___default.a.item,
       style: {
         backgroundImage: "url(./emojis/".concat(emojiItem, ".png)")
       },
@@ -30214,14 +30213,12 @@ if(false) {}
 
 exports = module.exports = __webpack_require__(16)(false);
 // Module
-exports.push([module.i, "._2ePr1iKKYEfSnIenKSrmDl {\n  display: flex;\n  flex-wrap: wrap;\n  width: 280px;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ._2ePr1iKKYEfSnIenKSrmDl ._2V8QqYyj5eqoOX3D3DJgM6 {\n    width: 18px;\n    height: 18px;\n    margin: 5px;\n    background-size: contain;\n    cursor: pointer; }\n", ""]);
+exports.push([module.i, "._1aJdy-0uWF2_mOe6yDc7-_ {\n  display: flex;\n  flex-wrap: wrap;\n  width: 280px;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ._1aJdy-0uWF2_mOe6yDc7-_ ._3B0OFuX3rQYIQud3Y29O7 {\n    width: 18px;\n    height: 18px;\n    margin: 5px;\n    background-size: contain;\n    cursor: pointer; }\n", ""]);
 
 // Exports
 exports.locals = {
-	"emoji-list": "_2ePr1iKKYEfSnIenKSrmDl",
-	"emojiList": "_2ePr1iKKYEfSnIenKSrmDl",
-	"emoji-item": "_2V8QqYyj5eqoOX3D3DJgM6",
-	"emojiItem": "_2V8QqYyj5eqoOX3D3DJgM6"
+	"list": "_1aJdy-0uWF2_mOe6yDc7-_",
+	"item": "_3B0OFuX3rQYIQud3Y29O7"
 };
 
 /***/ }),
