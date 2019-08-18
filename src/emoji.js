@@ -108,5 +108,27 @@ export default {
     'australia',
     'austria'
   ],
+  vehicle: [
+    'car',
+    'taxi',
+    'blue_car',
+    'bus',
+    'trolleybus',
+    'racing_car',
+    'police_car',
+    'ambulance',
+    'fire_engine',
+    'minibus',
+    'truck',
+    'articulated_lorry',
+    'tractor',
+    'kick_scooter',
+    'bike',
+    'motor_scooter',
+    'motorcycle',
+    'oncoming_police_car',
+    'oncoming_bus',
+    'oncoming_automobile'
+  ],
   others: ['octocat', 'shipit', 'atom', 'electron']
 }

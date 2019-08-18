@@ -29287,6 +29287,7 @@ __webpack_require__.r(__webpack_exports__);
   food: ['green_apple', 'apple', 'pear', 'tangerine', 'lemon', 'banana', 'watermelon', 'grapes', 'strawberry', 'melon', 'cherries', 'peach', 'pineapple', 'kiwi_fruit', 'avocado', 'tomato', 'cucumber', 'carrot', 'corn'],
   activity: ['soccer', 'basketball', 'football', 'baseball', 'tennis', 'volleyball', 'rugby_football', '8ball', 'ping_pong', 'badminton', 'goal_net', 'ice_hockey', 'field_hockey', 'cricket', 'golf', 'bow_and_arrow', 'fishing_pole_and_fish', 'boxing_glove', 'martial_arts_uniform', 'ice_skate'],
   flag: ['white_flag', 'black_flag', 'checkered_flag', 'triangular_flag_on_post', 'rainbow_flag', 'afghanistan', 'aland_islands', 'albania', 'algeria', 'american_samoa', 'andorra', 'angola', 'anguilla', 'antarctica', 'antigua_barbuda', 'argentina', 'armenia', 'aruba', 'australia', 'austria'],
+  vehicle: ['car', 'taxi', 'blue_car', 'bus', 'trolleybus', 'racing_car', 'police_car', 'ambulance', 'fire_engine', 'minibus', 'truck', 'articulated_lorry', 'tractor', 'kick_scooter', 'bike', 'motor_scooter', 'motorcycle', 'oncoming_police_car', 'oncoming_bus', 'oncoming_automobile'],
   others: ['octocat', 'shipit', 'atom', 'electron']
 });
 
