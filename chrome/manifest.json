@@ -1,6 +1,6 @@
 {
   "name": "GitHub Emoji",
-  "version": "0.7.0",
+  "version": "1.1.0",
   "manifest_version": 2,
   "description": "A chrome extension of github emoji picker for fun.",
   "homepage_url": "https://github.com/FishPlusOrange/github-emoji",
