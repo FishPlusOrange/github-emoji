@@ -62,7 +62,8 @@ export default {
     'tomato',
     'cucumber',
     'carrot',
-    'corn'
+    'corn',
+    'hot_pepper'
   ],
   activity: [
     'soccer',
