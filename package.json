@@ -9,14 +9,6 @@
     "build": "webpack --mode-production",
     "release": "sh release.sh"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FishPlusOrange/github-emoji.git"
-  },
-  "bugs": {
-    "url": "https://github.com/FishPlusOrange/github-emoji/issues"
-  },
-  "homepage": "https://github.com/FishPlusOrange/github-emoji#readme",
   "keywords": [
     "emoji",
     "github",
@@ -48,5 +40,13 @@
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
+  },
+  "homepage": "https://github.com/FishPlusOrange/github-emoji#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FishPlusOrange/github-emoji.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FishPlusOrange/github-emoji/issues"
   }
 }

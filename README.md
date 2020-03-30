@@ -10,7 +10,7 @@ A chrome extension for the github emoji picker with fun :sunglasses:.
 
 :point_right: Chrome Extension
 
-- [Let's get it](https://chrome.google.com/webstore/detail/github-emoji/odophnhbmlnkolipnngbmlejgfhhabjm) :call_me_hand:
+- [Let's get it](https://chrome.google.com/webstore/detail/github-emoji/pfhcnffadoajdcedindnjcladkokgfpo) :call_me_hand:
 
 :point_right: Manual Installation
 

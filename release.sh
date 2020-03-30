@@ -1,4 +1,5 @@
-#!/usr/bin/env sh
+#!/bin/bash
+
 set -e
 echo "Enter release version:"
 read VERSION
